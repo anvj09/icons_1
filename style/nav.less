@@ -1,0 +1,60 @@
+*{
+  margin:0;
+}
+
+body{
+  height: 100%;
+}
+
+nav{
+  height: 80px;
+  //  width: 100%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.navWrapper2{
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  flex-direction: row;
+  top: 0;
+}
+
+.dropDownMenu{
+  height: 100%;
+  width: 40px;
+  background-color: bisque;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+}
+
+.toggle{
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .dropDownMenu{
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+      height: 40px;
+      background-color: coral;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }}
