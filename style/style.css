@@ -17,13 +17,13 @@ a {
   font-size: 30px;
   padding: 10px;
 }
-.navWrapper2 {
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-color: transparent;
-  flex-direction: row;
-  top: 0;
+.navWrapper {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  height: 200px;
+  width: 100px;
+  background-color: coral;
 }
 .dropDownMenu {
   height: 100%;
@@ -42,12 +42,9 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 600px) and screen and (max-width: 600px) {
-  nav {
-    height: 40px;
-    background-color: coral;
-    display: flex;
-    justify-content: flex-end;
+@media screen and (min-width: 600px) and screen and (min-width: 600px) {
+  .navWrapper {
+    display: none;
   }
 }
 * {
